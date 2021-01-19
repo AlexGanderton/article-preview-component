@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  font-size: 13px;
+  background: #ecf2f8;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  position: relative;
+  margin: 1rem;
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  width: 800px;
+  min-height: 300px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container > .left > img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container > .right > .top {
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+.container > .right > .top > h1 {
+  font-size: 1.4rem;
+  color: #48556a;
+}
+
+.container > .right > .top > p {
+  line-height: 1.5;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6d7f97;
+}
+
+.container > .right > .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  position: relative;
+}
+
+.container > .right > .bottom > .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container > .right > .bottom > .left > img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.container > .right > .bottom > .left > .text {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  font-size: 0.8rem;
+  color: #6d7f97;
+}
+
+.container > .right > .bottom > .left > .text > .name {
+  font-weight: 700;
+  color: #48556a;
+}
+
+.container > .right > .bottom > .right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container > .right > .bottom > .right > i {
+  background: #ecf2f8;
+  color: #6d7f97;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.container > .right > .bottom > .links {
+  position: absolute;
+  color: white;
+  min-height: 4.3rem;
+  min-width: 14.3rem;
+  top: -35%;
+  left: 64%;
+}
+
+.container > .right > .bottom > .links > .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #48556a;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  width: 230px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container > .right > .bottom > .links > .box > p {
+  color: #6d7f97;
+  font-size: 0.8rem;
+}
+
+.container > .right > .bottom > .links > .box > i {
+  cursor: pointer;
+}
+
+.container > .right > .bottom > .links > .arrow {
+  background: #48556a;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  left: 50%;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    width: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
+  }
+  .container > .left > img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+  .container > .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container > .right > .bottom > .links {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .container > .right > .bottom > .links > .box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 1.8rem;
+  }
+  .container > .right > .bottom > .links > .box > p {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .container > .right > .bottom > .links > .box > i {
+    margin-right: 1rem;
+  }
+  .container > .right > .bottom > .links > .arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container > .right > .top {
+    padding: 1rem 1rem 0 1rem;
+  }
+  .container > .right > .top > h1 {
+    font-size: 1rem;
+  }
+  .container > .right > .top > p {
+    font-size: 0.7rem;
+  }
+  .container > .right > .bottom {
+    padding: 1rem;
+  }
+  .container > .right > .bottom > .right > i {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container > .right > .bottom > .links > .box > p {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+  .container > .right > .bottom > .links > .box > i {
+    margin-right: 0.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
